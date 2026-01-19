@@ -24,11 +24,11 @@ export async function POST(req: Request) {
     { expiresIn: "7d" }
   );
 
-   cookies().set("token", token, {
+   /*cookies().set("token", token, {
     httpOnly: true,
     sameSite: "strict",
     secure: true,
-  });
+  });*/
 
   return Response.json({ success: true });
 }
